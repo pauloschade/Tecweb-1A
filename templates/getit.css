@@ -1,0 +1,219 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+.appbar {
+  top:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color:  #f7d736;
+  align-items:center;
+  width:100%;
+  box-shadow: 0 4px 6px rgb(100, 98, 98);
+}
+
+.logo {
+  width: 60px;
+  margin: 1%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+.form-card-title {
+  border:none;
+}
+
+.autoresize {
+  border:none;
+  margin-top: 1%;
+  height: 100%;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  padding: 1%;
+  margin-bottom: 2%;
+}
+
+.card-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  width: 13%;
+  height: 6.5rem;
+  border-radius: 2%;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgb(100, 98, 98);
+  padding: 1%;
+}
+
+.card-color-1{
+  background-color: #ead3a7;
+}
+.card-color-2{
+ background-color: #9de0f5;
+}
+.card-color-3{
+  background-color: #ef89ba;
+}
+.card-color-4{
+  background-color: #fae890;
+}
+.card-color-5{
+  background-color:  #abe9c1;
+}
+
+.card-title{
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  font-family: 'Permanent Marker', cursive;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: 'Permanent Marker', cursive;
+  font-size: small;
+  justify-content: center;
+  opacity: 0.8;
+  height: 100%;
+
+
+}
+
+.card-rotation-1 {transform: rotate(5deg);}
+.card-rotation-2 {transform: rotate(6deg);}
+.card-rotation-3 {transform: rotate(7deg);}
+.card-rotation-4 {transform: rotate(8deg);}
+.card-rotation-5 {transform: rotate(-5deg);}
+.card-rotation-6 {transform: rotate(-6deg);}
+.card-rotation-7 {transform: rotate(-7deg);}
+.card-rotation-8 {transform: rotate(-8deg);}
+.card-rotation-9 {transform: rotate(10deg);}
+
+/* Você pode usar o CSS comentado abaixo, se ajudar */
+/* Fonte: https://codepen.io/CrisWoler/pen/ogXBLj */
+.btn {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  background-color: #f7d736;
+
+  transition: background-color 0.3s;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn:before {
+  content: "";
+
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, 0.3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
+}
+.delete-button{
+  position: fixed;
+  width: 10%;
+  top: 0;
+  right: 0;
+  background-color:transparent;
+  color: red;
+  font-weight: 20000;
+  border-color: transparent;
+}
+
+.id{
+  display: none;
+}
+
+.form-note{
+  display: none;
+} 
+textarea {
+  background: url(images/benice.png) center center no-repeat; /* This ruins default border */
+  border: 1px solid #888;
+}
+
+.delb {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  width: 100%;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+
+  transition: background-color 0.3s;
+}
+
+.delb-color-5{
+  background-color: #ead3a7;
+}
+.delb-color-4{
+ background-color: #9de0f5;
+}
+.delb-color-3{
+  background-color: #ef89ba;
+}
+.delb-color-2{
+  background-color: #fae890;
+}
+.delb-color-1{
+  background-color:  #abe9c1;
+}

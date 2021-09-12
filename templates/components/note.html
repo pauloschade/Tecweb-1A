@@ -1,0 +1,14 @@
+<div class="card">
+  <form class="form-note" method="post" id="delete-{id}" action="/delete"></form>
+  <form class="form-note" method="post" id="update-{id}" action="/update"></form>
+    <button class="delete-button" form="delete-{id}" formaction="/delete"> X </button>
+    <div class="card-title">
+      <textarea class="id" name="id" form="delete-{id}">{id}</textarea>
+      <textarea class="id" name="id" form="update-{id}">{id}</textarea>
+      <textarea class="autoresize" name="titulo" form="update-{id}">{title}</textarea>
+    </div>
+    <div class="card-content">
+      <textarea class="autoresize" name="detalhes" form="update-{id}">{details}</textarea>
+    </div>
+    <button class="delb" form="update-{id}" formaction="/update"> update </button>
+</div>
