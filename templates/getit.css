@@ -217,3 +217,10 @@ textarea {
 .delb-color-1{
   background-color:  #abe9c1;
 }
+
+.error{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

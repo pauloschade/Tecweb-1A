@@ -1,7 +1,7 @@
 import socket
 from pathlib import Path
 from utils import extract_route, read_file, build_response
-from views import index, delete, update
+from views import index, delete, update, error
 
 CUR_DIR = Path(__file__).parent
 SERVER_HOST = '0.0.0.0'
@@ -32,7 +32,7 @@ while True:
     elif route == 'update':
         response = update(request)
     else:
-        response = build_response()
+        response = error()
 
     client_connection.sendall(response)
 

@@ -91,3 +91,6 @@ def update(request):
         return build_response(body=load_template('index.html').format(notes=notes), code=303, reason='See Other', headers='Location: /')
 
     return build_response(body=load_template('index.html').format(notes=notes))
+
+def error():
+    return build_response(body=load_template('error.html'))
